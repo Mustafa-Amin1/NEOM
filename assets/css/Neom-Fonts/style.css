@@ -1,12 +1,22 @@
+@font-face {
+    font-family: "29LTBukra-Regular";
+    font-display: swap;
+    src: url("fonts/29LTBukra-Regular.ttf") format("truetype"),url("fonts/29LTBukra-Regular.otf") format("opentype")
+}
 
+@font-face {
+    font-family: "29LT-zarid-Regular";
+    font-display: swap;
+    src: url("fonts/29LT-Zarid-Text-Regular.otf") format("opentype")
+}
 
-/* p ,#timer div span{
+p ,#timer div span{
     font-family: '29LT-zarid-Regular', Helvetica, Arial, Lucida, sans-serif;
 }
 
 .nav, h1, h2, h3, h4, h5, h6, .navbar-nav .nav-link,#timer div {
     font-family: '29LTBukra-Regular', Helvetica, Arial, Lucida, sans-serif;
-} */
+}
 body {
     font-family: '29LT-zarid-Regular', Helvetica, Arial, Lucida, sans-serif;
     font-size: 19px;
@@ -14,7 +24,6 @@ body {
 
 .sector p {
     font-size: 19px;
-    font-family: '29LT-zarid-Regular', Helvetica, Arial, Lucida, sans-serif;
 }
 
 .navbar-nav .nav-link {

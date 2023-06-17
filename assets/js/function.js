@@ -35,16 +35,19 @@ Pace.on('done', function () {
 
 
 //  navbar sticky
-// $(window).scroll(function () {
-//   if ($(this).scrollTop() > 100) {
-//     $('#NavBar').addClass('sticky').animate(5000)
-//   } else {
-//     $('#NavBar').removeClass('sticky').animate(5000)
-//   }
-// });
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 100) {
+    $('#NavBar').addClass('sticky').animate(5000)
+  } else {
+    $('#NavBar').removeClass('sticky').animate(5000)
+  }
+});
 
   
 $(document).ready(function () {
+
+  //arabic number with class="arabic"
+  $('body').persianNum();
 
   // start hero timer
   function makeTimer() {
@@ -75,6 +78,7 @@ $(document).ready(function () {
   }
   setInterval(function () {
     makeTimer();
+    $('body').persianNum();
   }, 0);
   // end hero timer
 

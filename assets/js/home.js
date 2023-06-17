@@ -14,7 +14,7 @@ var a = 0;
 
 
 $(window).scroll(function () {
-  var oTop = $("#counter-box")?.offset().top - (window.innerHeight);
+  var oTop = $("#counter-box")?.offset()?.top - (window.innerHeight);
   if (a == 0 && $(window).scrollTop() > oTop) {
     $(".counter").each(function () {
       var $this = $(this),

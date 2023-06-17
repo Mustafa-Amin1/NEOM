@@ -15,6 +15,67 @@
    background: url(../images/hamburger.png);
  }
 
+ /* start dropdown style
+ .ui-selectmenu-button,
+ .ui-menu {
+   font-family: 'Bukra', sans-serif;
+   font-weight: 400;
+ }
+
+ .ui-selectmenu-button .ui-icon {
+   background-image: none !important;
+ }
+
+ .ui-menu .ui-menu-item {
+   padding-block: 10px;
+ }
+
+ .ui-menu .ui-menu-item:not(:last-child) {
+   border-bottom: 1px solid #ddd;
+ }
+
+ .ui-menu li:hover {
+   background-color: #FFFAEB;
+ }
+
+ .ui-state-hover,
+ .ui-widget-content .ui-state-hover,
+ .ui-widget-header .ui-state-hover,
+ .ui-state-focus,
+ .ui-widget-content .ui-state-focus,
+ .ui-widget-header .ui-state-focus,
+ .ui-button:hover,
+ .ui-button:focus {
+   background-color: white;
+ }
+
+ .ui-state-active,
+ .ui-widget-content .ui-state-active,
+ .ui-widget-header .ui-state-active,
+ a.ui-button:active,
+ .ui-button:active,
+ .ui-button.ui-state-active:hover {
+   border: 1px solid transparent;
+   background: transparent;
+   font-weight: normal;
+   color: inherit;
+ }
+
+ .ui-button {
+   border-color: rgba(20, 20, 20, 0.1);
+ }
+
+ .ui-button:hover {
+   background-color: white;
+   border-color: rgba(20, 20, 20, 0.1);
+ }
+
+ .ui-selectmenu-button:active {
+   background-color: white;
+   color: black;
+   border: 1px solid rgba(20, 20, 20, 0.1);
+ } */
+
  /* inputs  */
  input,
  select {
