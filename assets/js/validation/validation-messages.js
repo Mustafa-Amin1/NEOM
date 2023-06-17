@@ -1,0 +1,21 @@
+// jQuery.extend(jQuery.validator.messages, {
+//     // required: " هذا الحقل مطلوب ",
+//     email: " بريد الكتروني غير صالح ",
+//     max: jQuery.validator.format("الحد الاقصى المطلوب {0}."),
+//     min: jQuery.validator.format("الحد الادنى المطلوب {0}."),
+//     number:  " ادخل ارقام ",
+//     // remote: "Please fix this field.",
+//     // url: "Please enter a valid URL.",
+//     // date: "Please enter a valid date.",
+//     // dateISO: "Please enter a valid date (ISO).",
+//     // number: "Please enter a valid number.",
+//     // digits: "Please enter only digits.",
+//     // creditcard: "Please enter a valid credit card number.",
+//     // equalTo: "Please enter the same value again.",
+//     // accept: "Please enter a value with a valid extension.",
+//     // maxlength: jQuery.validator.format("Please enter no more than {0} characters."),
+//     // minlength: jQuery.validator.format("Please enter at least {0} characters."),
+//     // rangelength: jQuery.validator.format("Please enter a value between {0} and {1} characters long."),
+//     // range: jQuery.validator.format("Please enter a value between {0} and {1}."),
+   
+// });

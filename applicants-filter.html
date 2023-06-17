@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ملتقى شركاء نيوم للتوظيف 2023</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png" />
+    <link href="assets/css/bootstrap.min.rtl.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <link href="assets/css/jquery-ui/jquery-ui.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/applicants-filter.css" rel="stylesheet">
+    <link href="assets/css/Neom-Fonts/style.css?id=156" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div class=" gifted">
+        <!-- start header -->
+        <div id="NavBar" class="header light-nav overflow-lg-hidden">
+            <div class="row align-items-center page-container">
+                <div class="col-lg-2 d-lg-flex  justify-content-start">
+                    <a href="https://www.neom.com" class="logo">
+                        <img src="assets/images/logo-ar2.png" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-8">
+                    <nav class="navbar navbar-expand-lg p-0">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav mx-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">الرئيسية</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://www.sr.neom.com/" target="_blank"> نيوم المسؤوليه
+                                        المجتمعية </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="job-category.html">الوظائف</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">الشركاء</a>
+                                </li>
+                                <!--<li class="nav-item active">
+                        <a class="nav-link" href="#">الموهوبين</a>
+                    </li>-->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">من نحن</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="mailto: m.youssef@wten.com.sa">تواصل معنا</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-lg-2 d-lg-flex d-none justify-content-end">
+                    <div class="d-flex justify-content-center">
+                        <a href="apply.html" class="main-btn">سجل الآن</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="page-container">
+            <!-- start hero -->
+            <div
+                class=" my-hero d-flex flex-column justify-content-center align-items-center align-items-center justify-content-center">
+                <div class=" text-center">
+                    <h1>تصفية</h1>
+                    <h3>المتقدمين</h3>
+                </div>
+
+                <div class="statistics container">
+                    <div class="row justify-content-between align-items-center" id="counter-box">
+                        <div class="jobs col-md-3 col-sm-6 col-12 "
+                            data-sr="enter bottom over 1.2s and move 50px wait .2s">
+                            <div
+                                class="p-3 statistics-box d-flex flex-column justify-content-center align-items-center">
+                                <h2>عدد المتقدمين</h2>
+                                <span class="counter" data-number="10100">0</span>
+                            </div>
+                        </div>
+                        <div class="accepted col-md-3 col-sm-6 col-12 "
+                            data-sr="enter bottom over 1.2s and move 50px wait .4s">
+                            <div
+                                class="p-3 statistics-box d-flex flex-column justify-content-center align-items-center">
+                                <h2>عدد المقبولين</h2>
+                                <span class="counter" data-number="350">0</span>
+                            </div>
+                        </div>
+                        <div class="rejected col-md-3 col-sm-6 col-12 "
+                            data-sr="enter bottom over 1.2s and move 50px wait .6s">
+                            <div
+                                class="p-3 statistics-box d-flex flex-column justify-content-center align-items-center">
+                                <h2>عدد المرفوضين</h2>
+                                <span class="counter" data-number="500">0</span>
+                            </div>
+                        </div>
+                        <div class="review col-md-3 col-sm-6 col-12 "
+                            data-sr="enter bottom over 1.2s and move 50px wait .8s">
+                            <div
+                                class="p-3 statistics-box d-flex flex-column justify-content-center align-items-center">
+                                <h2>تحت المراجعة</h2>
+                                <span class="counter" data-number="100">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- start page content -->
+    <main id="applicants-filter">
+        <article id="filter-form">
+            <div class="page-container">
+                <section class="row">
+                    <header id="filter-form-header" class="col-12">
+                        <h3 class="">تصنيف بواسطة</h3>
+                    </header>
+                    <form class="col-12">
+                        <div class="row">
+                            <!-- date picker -->
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div class="form-group flex flex-column gap-4">
+                                    <label for="" class="field-label">
+                                        <img src="assets/images/icons/ic_filter-label.svg" class="mr-2" />
+                                        التاريخ من
+                                    </label>
+                                    <div class="d-flex flex-row date-box">
+                                        <input id="datepicker_from" class="form-control" placeholder="يوم / شهر / سنة"
+                                            type="text" />
+                                        <span
+                                            class="between d-flex flex-column align-items-center justify-content-center ">الى</span>
+                                        <input id="datepicker_to" class="form-control " placeholder="يوم / شهر / سنة"
+                                            type="text" />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- dropdown list select -->
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div class="form-group flex flex-column gap-4">
+                                    <label for="status">
+                                        <img src="assets/images/icons/ic_filter-label.svg" class="mr-2" />
+                                        الحالة
+                                    </label>
+                                    <select name="status" id="status" class="form-control ">
+                                        <option selected="selected">غير محدد</option>
+                                        <option>مقبول</option>
+                                        <option>مرفوض</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- education -->
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div class="form-group flex flex-column gap-4">
+                                    <label for="education">
+                                        <img src="assets/images/icons/ic_filter-label.svg" class="mr-2" />
+                                        المؤهل الدراسي
+                                    </label>
+                                    <select name="education" id="education" class="form-control ">
+                                        <option selected="selected"> بكالوريوس</option>
+                                        <option>ماجيستير</option>
+                                        <option>دكتوراه</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- Age -->
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div class="form-group flex flex-column gap-4">
+                                    <label for="" class="field-label">
+                                        <img src="assets/images/icons/ic_filter-label.svg" class="mr-2" />
+                                        العمر من
+                                    </label>
+                                    <div class="d-flex flex-row date-box">
+                                        <input id="age_from" class="form-control" placeholder="00" type="number" />
+                                        <span
+                                            class="between d-flex flex-column align-items-center justify-content-center ">الى</span>
+                                        <input id="age_to" class="form-control" placeholder="00" type="number" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- submit button -->
+                        <button type="submit"
+                            class="submit-btn text-center d-flex flex-row align-items-center justify-content-beween">
+                            بحث
+                            <img src="assets/images/icons/ic_search.svg" width="16" height="16" class="ml-2" />
+                        </button>
+                    </form>
+                </section>
+            </div>
+        </article>
+
+        <article class="gifted-cont bg-white">
+            <div class="page-container">
+                <div
+                    class="filter-actions m-0 w-100 row justify-content-between align-items-center flex-column flex-md-row">
+                    <div class="form-check d-inline p-0 col-md-4 col-12">
+                        <label class="form-check-label m-0 position-relative" id="checkAll">
+                            <input type="checkbox" class="form-check-input applicant-check " value="false">
+                            <span class="checkmark"></span>
+                            تحديد الكل
+                        </label>
+                    </div>
+                    <div class="actions col-md-8 col-12 justify-content-end align-items-center d-none row">
+                        <button class="btn btn-green accept-btn" onClick="acceptCheckedApplicants('accept')">قبول
+                            المحدد</button>
+                        <button class="btn btn-red reject-btn" onClick="rejectCheckedApplicants('reject')">رفض
+                            المحدد</button>
+                    </div>
+                </div>
+
+                <section class="row" id="myGroup">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="applicant" data-index="0">
+                            <div class="hold-it">
+                                <a href="" data-toggle="collapse" data-target="#more1" class="moreat"><img
+                                        src="assets/images/icons/menu.svg" alt=""></a>
+                                <div class="dropdown-menu dropy collapse" id="more1" data-parent="#myGroup">
+                                    <a class="dropdown-item" href="#" data-toggle="modal"
+                                        data-target="#assignModal"><img src="assets/images/icons/check1.svg"
+                                            class="mr-1" alt=""> قبول الطلب</a>
+                                    <a class="dropdown-item" href="#" data-toggle="modal"
+                                        data-target="#cancelModal"><img src="assets/images/icons/cancel.svg"
+                                            class="mr-1" alt=""> رفض الطلب</a>
+                                </div>
+                            </div>
+                            <div class="form-check d-inline p-0 ">
+                                <label class="form-check-label m-0 position-relative">
+                                    <input type="checkbox" class="form-check-input applicant-check" data-index="0"
+                                        value="false">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="imagee " data-toggle="modal" data-target="#applicantDetailsModal"><img
+                                    src="assets/images/user3.png" alt=""></div>
+                            <h4 data-toggle="modal" data-target="#applicantDetailsModal" class="applicant-name">محمود
+                                مصطفى</h4>
+                            <div class="applicant-status red-status">
+                                <div class="red-circle"></div>
+                                <span>مرفوض</span>
+                            </div>
+                            <div class="contact">
+                                <a href="mailto: m.youssef@wten.com.sa">m.youssef@wten.com.sa<img
+                                        src="assets/images/icons/envelope1.svg" alt="" class="ml-2">
+                                </a>
+                                <a href="tel:0534444445">0534444445<img src="assets/images/icons/phone.svg" alt=""
+                                        class="ml-2"></a>
+                            </div>
+
+                            <!-- <div class="  w-100 container "> -->
+                            <div class="info  w-100 row justify-content-center align-items-cneter">
+                                <p class="col-6"><span>الجنسية:</span> <span>سعودي</span></p>
+                                <p class="col-6"> <span>تاريخ الميلاد:</span><span> 2/2/1997</span></p>
+                                <p class="col-6"><span>محل الإقامة:</span> <span>السعودية</span></p>
+                                <p class="col-6"><span>المؤهل:</span> <span>بكاليريوس</span></p>
+                            </div>
+                            <!-- </div> -->
+                            <div class="deta">
+
+                                <a href="assets/images/sample.pdf" target="_blank" class="more">السيرة الذاتية</a>
+                                <a href="https://www.youtube.com/watch?v=V6LAVmuL3WU"
+                                    class="popup-youtube1 vidi more">الفيديو
+                                    التعريفي</a>
+                            </div>
+                            <button data-toggle="modal" data-target="#applicantDetailsModal"
+                                class="details-btn text-center d-flex flex-row align-items-center justify-content-beween">
+                                عرض التفاصيل
+                            </button>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <!-- class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-4 col-xxl-3" -->
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="applicant" data-index="1">
+                            <div class="hold-it">
+                                <a href="" data-toggle="collapse" data-target="#more2" class="moreat"><img
+                                        src="assets/images/icons/menu.svg" alt=""></a>
+                                <div class="dropdown-menu dropy collapse" id="more2" data-parent="#myGroup">
+                                    <a class="dropdown-item" href="#" data-toggle="modal"
+                                        data-target="#assignModal"><img src="assets/images/icons/check1.svg"
+                                            class="mr-1" alt=""> قبول الطلب</a>
+                                    <a class="dropdown-item" href="#" data-toggle="modal"
+                                        data-target="#cancelModal"><img src="assets/images/icons/cancel.svg"
+                                            class="mr-1" alt=""> رفض الطلب</a>
+                                </div>
+                            </div>
+                            <div class="form-check d-inline p-0 ">
+                                <label class="form-check-label m-0 position-relative">
+                                    <input type="checkbox" class="form-check-input applicant-check" data-index="1"
+                                        value="false">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="imagee" data-toggle="modal" data-target="#applicantDetailsModal"><img
+                                    src="assets/images/user4.jpg" alt=""></div>
+                            <h4 data-toggle="modal" data-target="#applicantDetailsModal" class="applicant-name">أحمد عبد
+                                الرحمن</h4>
+                            <div class="applicant-status green-status">
+                                <span class="green-circle"></span>
+                                <span>مقبول</span>
+                            </div>
+                            <div class="contact">
+                                <a href="mailto: m.youssef@wten.com.sa">m.youssef@wten.com.sa<img
+                                        src="assets/images/icons/envelope1.svg" alt="" class="ml-2">
+                                </a>
+                                <a href="tel:0534444445">0534444445<img src="assets/images/icons/phone.svg" alt=""
+                                        class="ml-2"></a>
+                            </div>
+                            <div class="info  w-100 row justify-content-center align-items-cneter">
+                                <p class="col-6"><span>الجنسية:</span> <span>سعودي</span></p>
+                                <p class="col-6"> <span>تاريخ الميلاد:</span><span> 2/2/1997</span></p>
+                                <p class="col-6"><span>محل الإقامة:</span> <span>السعودية</span></p>
+                                <p class="col-6"><span>المؤهل:</span> <span>بكاليريوس</span></p>
+                            </div>
+                            <div class="deta">
+                                <a href="assets/images/sample.pdf" target="_blank" class="more">السيرة الذاتية</a>
+                                <a href="https://www.youtube.com/watch?v=V6LAVmuL3WU"
+                                    class="popup-hello vidi more">الفيديو
+                                    التعريفي</a>
+                            </div>
+                            <button data-toggle="modal" data-target="#applicantDetailsModal"
+                                class="details-btn text-center d-flex flex-row align-items-center justify-content-beween">
+                                عرض التفاصيل
+                            </button>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="applicant" data-index="2">
+                            <div class="hold-it">
+                                <a href="" data-toggle="collapse" data-target="#more3" class="moreat"><img
+                                        src="assets/images/icons/menu.svg" alt=""></a>
+                                <div class="dropdown-menu dropy collapse" id="more3" data-parent="#myGroup">
+                                    <a class="dropdown-item" href="#" data-toggle="modal"
+                                        data-target="#assignModal"><img src="assets/images/icons/check1.svg"
+                                            class="mr-1" alt=""> قبول الطلب</a>
+                                    <a class="dropdown-item" href="#" data-toggle="modal"
+                                        data-target="#cancelModal"><img src="assets/images/icons/cancel.svg"
+                                        class="mr-1" alt=""> رفض الطلب</a>
+                                </div>
+                            </div>
+                            <div class="form-check d-inline p-0 ">
+                                <label class="form-check-label m-0 position-relative">
+                                    <input type="checkbox" class="form-check-input applicant-check" data-index="2"
+                                        value="false">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="imagee" data-toggle="modal" data-target="#applicantDetailsModal"><img
+                                    src="assets/images/user5.jpg" alt=""></div>
+                            <h4 data-toggle="modal" data-target="#applicantDetailsModal" class="applicant-name">يسرا
+                                منصور</h4>
+                            <div class="contact">
+                                <a href="mailto: m.youssef@wten.com.sa">m.youssef@wten.com.sa<img
+                                        src="assets/images/icons/envelope1.svg" alt="" class="ml-2">
+                                </a>
+                                <a href="tel:0534444445">0534444445<img src="assets/images/icons/phone.svg" alt=""
+                                        class="ml-2"></a>
+                            </div>
+
+                            <div class="info  w-100 row justify-content-center align-items-cneter">
+                                <p class="col-6"><span>الجنسية:</span> <span>سعودي</span></p>
+                                <p class="col-6"> <span>تاريخ الميلاد:</span><span> 2/2/1997</span></p>
+                                <p class="col-6"><span>محل الإقامة:</span> <span>السعودية</span></p>
+                                <p class="col-6"><span>المؤهل:</span> <span>بكاليريوس</span></p>
+                            </div>
+                            <div class="deta">
+
+                                <a href="assets/images/sample.pdf" target="_blank" class="more">السيرة الذاتية</a>
+                                <a href="https://www.youtube.com/watch?v=V6LAVmuL3WU"
+                                    class="popup-youtube1 vidi more">الفيديو
+                                    التعريفي</a>
+                            </div>
+                            <button data-toggle="modal" data-target="#applicantDetailsModal"
+                                class="details-btn text-center d-flex flex-row align-items-center justify-content-beween">
+                                عرض التفاصيل
+                            </button>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="applicant" data-index="3">
+                            <div class="hold-it">
+                                <a href="" data-toggle="collapse" data-target="#more4" class="moreat"><img
+                                        src="assets/images/icons/menu.svg" alt=""></a>
+                                <div class="dropdown-menu dropy collapse" id="more4" data-parent="#myGroup">
+                                    <a class="dropdown-item" href="#" data-toggle="modal"
+                                        data-target="#assignModal"><img src="assets/images/icons/check1.svg"
+                                            class="mr-1" alt=""> قبول الطلب</a>
+                                    <a class="dropdown-item" href="#" data-toggle="modal"
+                                        data-target="#cancelModal"><img src="assets/images/icons/cancel.svg"
+                                            class="mr-1" alt=""> رفض الطلب</a>
+                                </div>
+                            </div>
+                            <div class="form-check d-inline p-0 ">
+                                <label class="form-check-label m-0 position-relative">
+                                    <input type="checkbox" class="form-check-input applicant-check" data-index="3"
+                                        value="false">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="imagee" data-toggle="modal" data-target="#applicantDetailsModal"><img
+                                    src="assets/images/user3.png" alt=""></div>
+                            <h4 data-toggle="modal" data-target="#applicantDetailsModal" class="applicant-name">محمود
+                                مصطفى</h4>
+                            <div class="contact">
+                                <a href="mailto: m.youssef@wten.com.sa">m.youssef@wten.com.sa<img
+                                        src="assets/images/icons/envelope1.svg" alt="" class="ml-2">
+                                </a>
+                                <a href="tel:0534444445">0534444445<img src="assets/images/icons/phone.svg" alt=""
+                                        class="ml-2"></a>
+                            </div>
+                            <div class="info  w-100 row justify-content-center align-items-cneter">
+                                <p class="col-6"><span>الجنسية:</span> <span>سعودي</span></p>
+                                <p class="col-6"> <span>تاريخ الميلاد:</span><span> 2/2/1997</span></p>
+                                <p class="col-6"><span>محل الإقامة:</span> <span>السعودية</span></p>
+                                <p class="col-6"><span>المؤهل:</span> <span>بكاليريوس</span></p>
+                            </div>
+                            <div class="deta">
+                                <a href="assets/images/sample.pdf" target="_blank" class="more">السيرة الذاتية</a>
+                                <a href="https://www.youtube.com/watch?v=V6LAVmuL3WU"
+                                    class="popup-youtube1 vidi more">الفيديو
+                                    التعريفي</a>
+                            </div>
+                            <button data-toggle="modal" data-target="#applicantDetailsModal"
+                                class="details-btn text-center d-flex flex-row align-items-center justify-content-beween">
+                                عرض التفاصيل
+                            </button>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="applicant" data-index="4">
+                            <div class="hold-it">
+                                <a href="" data-toggle="collapse" data-target="#more5" class="moreat"><img
+                                        src="assets/images/icons/menu.svg" alt=""></a>
+                                <div class="dropdown-menu dropy collapse" id="more5" data-parent="#myGroup">
+                                    <a class="dropdown-item" href="#" data-toggle="modal"
+                                        data-target="#assignModal"><img src="assets/images/icons/check1.svg"
+                                            class="mr-1" alt=""> قبول الطلب</a>
+                                    <a class="dropdown-item" href="#" data-toggle="modal"
+                                        data-target="#cancelModal"><img src="assets/images/icons/cancel.svg"
+                                            class="mr-1" alt=""> رفض الطلب</a>
+                                </div>
+                            </div>
+                            <div class="form-check d-inline p-0 ">
+                                <label class="form-check-label m-0 position-relative">
+                                    <input type="checkbox" class="form-check-input applicant-check" data-index="4"
+                                        value="false">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="imagee" data-toggle="modal" data-target="#applicantDetailsModal"><img
+                                    src="assets/images/user4.jpg" alt=""></div>
+                            <h4 data-toggle="modal" data-target="#applicantDetailsModal" class="applicant-name">أحمد عبد
+                                الرحمن</h4>
+                            <div class="contact">
+                                <a href="mailto: m.youssef@wten.com.sa">m.youssef@wten.com.sa<img
+                                        src="assets/images/icons/envelope1.svg" alt="" class="ml-2">
+                                </a>
+                                <a href="tel:0534444445">0534444445<img src="assets/images/icons/phone.svg" alt=""
+                                        class="ml-2"></a>
+                            </div>
+                            <div class="info  w-100 row justify-content-center align-items-cneter">
+                                <p class="col-6"><span>الجنسية:</span> <span>سعودي</span></p>
+                                <p class="col-6"> <span>تاريخ الميلاد:</span><span> 2/2/1997</span></p>
+                                <p class="col-6"><span>محل الإقامة:</span> <span>السعودية</span></p>
+                                <p class="col-6"><span>المؤهل:</span> <span>بكاليريوس</span></p>
+                            </div>
+                            <div class="deta">
+                                <a href="assets/images/sample.pdf" target="_blank" class="more">السيرة الذاتية</a>
+                                <a href="https://www.youtube.com/watch?v=V6LAVmuL3WU"
+                                    class="popup-youtube1 vidi more">الفيديو
+                                    التعريفي</a>
+                            </div>
+                            <button data-toggle="modal" data-target="#applicantDetailsModal"
+                                class="details-btn text-center d-flex flex-row align-items-center justify-content-beween">
+                                عرض التفاصيل
+                            </button>
+                        </div>
+                    </div>
+
+                    <!--  -->
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="applicant" data-index="5">
+                            <div class="hold-it">
+                                <a href="" data-toggle="collapse" data-target="#more5" class="moreat"><img
+                                        src="assets/images/icons/menu.svg" alt=""></a>
+                                <div class="dropdown-menu dropy collapse" id="more5" data-parent="#myGroup">
+                                    <a class="dropdown-item" href="#" data-toggle="modal"
+                                        data-target="#assignModal"><img src="assets/images/icons/check1.svg"
+                                            class="mr-1" alt=""> قبول الطلب</a>
+                                    <a class="dropdown-item" href="#" data-toggle="modal"
+                                        data-target="#cancelModal"><img src="assets/images/icons/cancel.svg"
+                                            class="mr-1" alt=""> رفض الطلب</a>
+                                </div>
+                            </div>
+                            <div class="form-check d-inline p-0 ">
+                                <label class="form-check-label m-0 position-relative">
+                                    <input type="checkbox" class="form-check-input applicant-check" data-index="4"
+                                        value="false">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="imagee" data-toggle="modal" data-target="#applicantDetailsModal"><img
+                                    src="assets/images/user4.jpg" alt=""></div>
+                            <h4 data-toggle="modal" data-target="#applicantDetailsModal" class="applicant-name">أحمد عبد
+                                الرحمن</h4>
+                            <div class="contact">
+                                <a href="mailto: m.youssef@wten.com.sa">m.youssef@wten.com.sa<img
+                                        src="assets/images/icons/envelope1.svg" alt="" class="ml-2">
+                                </a>
+                                <a href="tel:0534444445">0534444445<img src="assets/images/icons/phone.svg" alt=""
+                                        class="ml-2"></a>
+                            </div>
+                            <div class="info  w-100 row justify-content-center align-items-cneter">
+                                <p class="col-6"><span>الجنسية:</span> <span>سعودي</span></p>
+                                <p class="col-6"> <span>تاريخ الميلاد:</span><span> 2/2/1997</span></p>
+                                <p class="col-6"><span>محل الإقامة:</span> <span>السعودية</span></p>
+                                <p class="col-6"><span>المؤهل:</span> <span>بكاليريوس</span></p>
+                            </div>
+                            <div class="deta">
+                                <a href="assets/images/sample.pdf" target="_blank" class="more">السيرة الذاتية</a>
+                                <a href="https://www.youtube.com/watch?v=V6LAVmuL3WU"
+                                    class="popup-youtube1 vidi more">الفيديو
+                                    التعريفي</a>
+                            </div>
+                            <button data-toggle="modal" data-target="#applicantDetailsModal"
+                                class="details-btn text-center d-flex flex-row align-items-center justify-content-beween">
+                                عرض التفاصيل
+                            </button>
+                        </div>
+                    </div>
+                    <!--  -->
+
+                </section>
+            </div>
+        </article>
+    </main>
+
+    <!-- Applicant details modal -->
+    <div class="modal fade " id="applicantDetailsModal" tabindex="-1" role="dialog"
+        aria-labelledby="applicantDetailsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" id="applicant-modal">
+                <button type="button" class="close colse-modal-btn position-absolute top-0 right-0" data-dismiss="modal"
+                    aria-label="Close">
+                    <img src="assets/images/icons/ic_close.svg" />
+                </button>
+                <div class="applicant-modal position-relative">
+                    <div class="applicant m-0 px-3 border-0 shadow-none ">
+                        <!-- <button id="prevApplicant" class="bg-transparent arrow-btn prev-btn position-absolute"
+                            onClick="getPrevApplicant(1)">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="25" width="24"
+                                viewBox="0 0 512 512">
+                            </svg>
+                        </button>
+                        <button id="nextApplicant" class="bg-transparent arrow-btn next-btn position-absolute"
+                            onClick="getNextApplicant(1)">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="25" width="24"
+                                viewBox="0 0 512 512">
+                                <path
+                                    d="M512 256A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM271 135c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-87 87 87 87c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L167 273c-9.4-9.4-9.4-24.6 0-33.9L271 135z" />
+                            </svg>
+                        </button> -->
+                        <div class="imagee" data-toggle="modal" data-target="#applicantDetailsModal"><img
+                                src="assets/images/user4.jpg" alt=""></div>
+                        <h4 data-toggle="modal" data-target="#applicantDetailsModal">يسرا منصور </h4>
+                        <div class="contact">
+                            <a href="mailto: m.youssef@wten.com.sa">m.youssef@wten.com.sa<img
+                                    src="assets/images/icons/envelope1.svg" alt="" class="ml-2">
+                            </a>
+                            <a href="tel:1515164411551">1515164411551<img src="assets/images/icons/phone.svg" alt=""
+                                    class="ml-2"></a>
+                        </div>
+                        <div class="w-100 container-fluid p-0 ">
+                            <div class="info odd w-100 m-0 row justify-content-center align-items-cneter">
+                                <p class="col-6">الجنسية: <span> مصري </span></p>
+                                <p class="col-6">تاريخ الميلاد: <span> 25/09/2023</span></p>
+                                <p class="col-6">محل الإقامة: <span> السعودية </span></p>
+                                <p class="col-6">الجنس:<span> ذكر </span></p>
+                            </div>
+                        </div>
+                        <div class="w-100 container-fluid p-0 ">
+                            <div class="info w-100 m-0 row justify-content-center align-items-cneter">
+                                <p class="col-6">المؤهل: <span> بكالوريوس </span></p>
+                                <p class="col-6">تاريخ الإبتداء:<span> 15/06/2023 </span></p>
+                                <p class="col-6">تاريخ الانتهاء: <span>15/07/2023</span></p>
+                                <p class="col-6">الدرجة: <span>150</span></p>
+                            </div>
+                        </div>
+                        <div class="w-100 container-fluid p-0 ">
+                            <div class="info m-0 border-bottom odd w-100 row justify-content-center align-items-cneter">
+                                <p class="col-6">مستوى الخبرة:
+                                    <span>متوسط</span>
+                                </p>
+                                <p class="col-6">مهارات ال IT: <span> متوسط </span></p>
+                                <p class="col-6">الراتب المتوقع: <span>5000 ر.س</span></p>
+                                <p class="col-6">اللغات: <span> 'العربية', 'الانجليزية' </span></p>
+                            </div>
+                        </div>
+
+                        <div class="deta">
+                            <a href="assets/images/sample.pdf" target="_blank" class="more">السيرة الذاتية</a>
+                            <a href="https://www.youtube.com/watch?v=V6LAVmuL3WU"
+                                class="popup-youtube1 vidi more">الفيديو
+                                التعريفي</a>
+                        </div>
+                        <div class="actions row justify-content-center align-items-center">
+                            <button class="btn btn-green">قبول المتقدم</button>
+                            <button class="btn btn-red">رفض المتقدم</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- acceptance modal -->
+    <div class="modal fade " id="acceptanceModal" role="dialog" aria-labelledby="acceptanceModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered " role="document">
+            <div class="modal-content container position-relative" id="acceptance-modal">
+                <button type="button" class="close colse-modal-btn position-absolute top-0 right-0" data-dismiss="modal"
+                    aria-label="Close">
+                    <img src="assets/images/icons/ic_close.svg" />
+                </button>
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <img src="assets/images/icons/ic_success-circle.svg" width="58" height="58" />
+                    <h2> تم قبول الطلب </h2>
+                    <p>سيتم ارسال رسالة عبر البريد الإلكتروني لصاحب الطلب بالقبول وابلاغه بالحضور </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- rejection modal -->
+    <div class="modal fade " id="rejectionModal" role="dialog" aria-labelledby="rejectionModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered " role="document">
+            <div class="modal-content container position-relative" id="rejection-modal">
+                <button type="button" class="close colse-modal-btn position-absolute top-0 right-0" data-dismiss="modal"
+                    aria-label="Close">
+                    <img src="assets/images/icons/ic_close.svg" />
+                </button>
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <img src="assets/images/icons/ic_failed-circle.svg" width="58" height="58" />
+                    <h2> تم رفض الطلب </h2>
+                    <p>سيتم ارسال رسالة عبر البريد الإلكتروني لصاحب الطلب بالقبول وابلاغه بالرفض </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- start footer -->
+    <div class="footer">
+        <div class="page-container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <img src="assets/images/foot-logo.svg" alt="">
+                    <p>أرض المستقبل حيث تمكين نخبة العقول وأمهر الكفاءات من تجسيد الأفكار الرائدة وتخطي المألوف، في عالم
+                        حقيقي يصنعه الخيال.</p>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-3">
+                    <ul>
+                        <li><a href="index.html" class="active">الرئيسية</a></li>
+                        <li><a href="job-category.html">الوظائف</a></li>
+                        <li> <a href="https://www.sr.neom.com/" target="_blank"> نيوم المسؤوليه المجتمعية </a></li>
+                        <!-- <li><a href="#">الشركاء</a></li>
+                <li><a href="#">الموهوبين</a></li>
+                <li><a href="#">من نحن</a></li> -->
+                        <li><a href="mailto: m.youssef@wten.com.sa">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <!-- <div class="col-lg-3">
+              <h3>تواصل معنا</h3>
+              <ul>
+                <li><a href="www.neom.com"><img class="mr-2" src="assets/images/icons/globe.svg" alt=""> <span>www.neom.com</span></a></li>
+                <li><a><img class="mr-2" src="assets/images/icons/map2.svg" alt=""> <span>تبوك ، السعودية</span></a></li>
+                <li><a><img class="mr-2" src="assets/images/icons/cal2.svg" alt=""> <span>٦،٧ مايو ٢٠٢٣</span></a></li>
+              </ul>
+            </div> -->
+            </div>
+            <div class="soci">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <p>تابع نيوم على وسائل التواصل الاجتماعي</p>
+                    </div>
+                    <div class="col-lg-6 text-right">
+                        <div class="social">
+                            <!-- <a href=""><img src="" alt=""><img src="assets/images/icons/Facebook.svg" alt=""></a> -->
+                            <a href=""><img src="" alt=""><img src="assets/images/icons/Twitter.svg" alt=""></a>
+                            <!-- <a href=""><img src="" alt=""><img src="assets/images/icons/Instagram.svg" alt=""></a> -->
+                            <!-- <a href=""><img src="" alt=""><img src="assets/images/icons/LinkedIn.svg" alt=""></a> -->
+                            <!-- <a href=""><img src="" alt=""><img src="assets/images/icons/YouTube.svg" alt=""></a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="page-container">
+            <p>
+                <a href="">سياسة الخصوصية</a>
+                <a href="">تعليمات الإستخدام</a>
+                <a href="">سياسة ملفات تعريف الإرتباط</a>
+
+                <span>© 2023 NEOM</span>
+            </p>
+        </div>
+    </div>
+
+    <!-- ============================ Start JS Libraries ======================================-->
+    <script src="assets/js/jquery.js" type="text/javascript"></script>
+
+    <!-- bootstrap -->
+    <script src="assets/js/popper.min.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap.js" type="text/javascript"></script>
+
+    <!-- movement animation && slider for preloading -->
+    <script src="assets/js/reveal.js"></script>
+
+    <!-- jquery UI components -->
+    <script src="assets/js/jquery-ui.min.js" type="text/javascript"></script>
+
+    <!-- custom js files -->
+    <script src="assets/js/applicants-filter.js" type="text/javascript"></script>
+    <script src="assets/js/function.js" type="text/javascript"></script>
+
+</body>
+
+</html>

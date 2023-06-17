@@ -1,0 +1,87 @@
+
+
+/* p ,#timer div span{
+    font-family: '29LT-zarid-Regular', Helvetica, Arial, Lucida, sans-serif;
+}
+
+.nav, h1, h2, h3, h4, h5, h6, .navbar-nav .nav-link,#timer div {
+    font-family: '29LTBukra-Regular', Helvetica, Arial, Lucida, sans-serif;
+} */
+body {
+    font-family: '29LT-zarid-Regular', Helvetica, Arial, Lucida, sans-serif;
+    font-size: 19px;
+}
+
+.sector p {
+    font-size: 19px;
+    font-family: '29LT-zarid-Regular', Helvetica, Arial, Lucida, sans-serif;
+}
+
+.navbar-nav .nav-link {
+    padding: 0.4rem 0.4rem !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.76;
+}
+
+a.logo img {
+    transition: 0.5s all ease;
+    height: auto;
+    width: 60px;
+}
+.ml-auto, .mx-auto {
+    margin-left: 0 !important;
+    margin-right: auto!important;
+}
+.announcement-soon-content #timer div{
+    font-size:30px ;
+}
+
+
+.p img {
+    width: 110px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #313131bd !important;
+}
+
+.copyright p, .copyright a {
+    font-size: 14px;
+}
+
+.header.sticky a.logo img{
+    transition: 0.5s all ease;
+    height: auto;
+    width: 40px;
+}
+
+a.main-btn, .main-btn, button.main-btn{
+    padding: 15px 35px;
+}
+
+/* light nav style*/
+#NavBar.light-nav{
+    background-color: #313131bd  !important;
+}
+#NavBar.light-nav.sticky{
+    background-color: #313131 !important;
+}
+
+/*  media queries for header */
+@media only screen and (max-width: 1295px) and (min-width: 991px) {
+ 
+    .page-container {
+      margin-inline: 50px;
+    }
+
+    .navbar-nav .nav-link,
+    #NavBar .main-btn  {
+      font-size: 11px;
+    }
+
+}

@@ -1,0 +1,16 @@
+.profile-logo {
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/bg_1.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profile-title {
+    font-weight: 700;
+    font-size: 24px;
+    color: #B89635;
+    margin-bottom: 27px;
+}
